@@ -1,0 +1,24 @@
+# Build outputs
+build/
+*.o
+*.a
+*.out
+cvm
+
+# CMake
+CMakeCache.txt
+CMakeFiles/
+cmake_install.cmake
+Makefile
+install_manifest.txt
+
+# IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+.DS_Store
+
+# Compiled binary
+cvm
+cvm.exe

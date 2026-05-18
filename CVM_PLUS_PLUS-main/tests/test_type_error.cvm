@@ -1,0 +1,2 @@
+// test_type_error.cvm
+print true + 1;

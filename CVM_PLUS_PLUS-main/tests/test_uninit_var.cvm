@@ -1,0 +1,2 @@
+// test_uninit_var.cvm
+print x;

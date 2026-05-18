@@ -1,0 +1,21 @@
+// test_arithmetic.cvm
+// Tests: let, arithmetic operators, print
+
+let x = 10;
+let y = 20;
+let z = x + y - 5;
+print z;           // Expected: 25
+
+let product = x * y;
+print product;     // Expected: 200
+
+let quotient = product / x;
+print quotient;    // Expected: 20
+
+// Unary negation
+let neg = -x;
+print neg;         // Expected: -10
+
+// Nested arithmetic
+let expr = (x + y) * 2 - quotient;
+print expr;        // Expected: 40

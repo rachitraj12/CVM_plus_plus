@@ -1,0 +1,26 @@
+// test_fizzbuzz.cvm
+// Classic FizzBuzz 1-20 using only integers
+// (Since CVM++ doesn't have strings, we print codes:
+//   3 = Fizz, 5 = Buzz, 15 = FizzBuzz, else print the number)
+
+let i = 1;
+while (i <= 20) {
+    let rem3  = i - (i / 3) * 3;
+    let rem5  = i - (i / 5) * 5;
+    let rem15 = i - (i / 15) * 15;
+
+    if (rem15 == 0) {
+        print 15;      // FizzBuzz
+    } else {
+        if (rem3 == 0) {
+            print 3;   // Fizz
+        } else {
+            if (rem5 == 0) {
+                print 5;   // Buzz
+            } else {
+                print i;
+            }
+        }
+    }
+    i = i + 1;
+}

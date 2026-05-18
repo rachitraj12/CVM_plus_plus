@@ -1,0 +1,45 @@
+// test_if_else.cvm
+// Tests: if, else, nested if/else
+
+let x = 42;
+
+if (x > 100) {
+    print 1;
+} else {
+    print 0;
+}
+// Expected: 0
+
+if (x == 42) {
+    print 42;
+}
+// Expected: 42
+
+// Nested if/else
+let grade = 75;
+if (grade >= 90) {
+    print 4;
+} else {
+    if (grade >= 75) {
+        print 3;
+    } else {
+        if (grade >= 60) {
+            print 2;
+        } else {
+            print 1;
+        }
+    }
+}
+// Expected: 3 (B grade)
+
+// if/else with assignment
+let max = 0;
+let p = 15;
+let q = 9;
+if (p > q) {
+    max = p;
+} else {
+    max = q;
+}
+print max;
+// Expected: 15

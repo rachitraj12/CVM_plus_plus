@@ -1,0 +1,30 @@
+// test_booleans.cvm
+// Tests: boolean literals, comparison operators, equality
+
+let a = 5;
+let b = 10;
+
+// Comparison operators
+let lt  = a < b;
+let lte = a <= b;
+let gt  = a > b;
+let gte = a >= b;
+let eq  = a == b;
+let neq = a != b;
+
+print lt;    // true
+print lte;   // true
+print gt;    // false
+print gte;   // false
+print eq;    // false
+print neq;   // true
+
+// Boolean literals
+let yes = true;
+let no  = false;
+print yes;   // true
+print no;    // false
+
+// Equality of booleans
+let same = yes == true;
+print same;  // true

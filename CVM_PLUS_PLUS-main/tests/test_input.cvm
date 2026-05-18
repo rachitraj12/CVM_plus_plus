@@ -1,0 +1,11 @@
+// test_input.cvm
+// Tests: input keyword — reads an integer and echoes it back
+// Run: echo "7" | ./cvm tests/test_input.cvm
+
+let x = 0;
+input x;
+print x;
+
+// Double it
+let doubled = x * 2;
+print doubled;

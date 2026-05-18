@@ -1,0 +1,2 @@
+// test_div_zero.cvm
+print 5 / 0;
